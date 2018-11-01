@@ -5,7 +5,11 @@ from sqlalchemy import create_engine
 
 Base = declarative_base()
 
-# Write your classes here :
-class Product(Base):
-    # TODO: complete this class
-    pass
+class CC(Base):
+   __tablename__ = 'CC'
+   cc_number = Column(Integer, primary_key=True)
+   wacky_numbers = Column(Integer)
+   expiration_date = Column(Integer)
+   tamer2 = Column(String)
+   tamer = Column(String)
+
